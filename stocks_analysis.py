@@ -43,9 +43,9 @@ def create_stock_directory(stocks, folder = "D:\\datafiles\\acedemics\\sem_7\\ma
     return stocks_directories, stocks_not_found
         
 
-stocks_directories, stocks_not_found = create_stock_directory(stocks)
-stocks = list(set(stocks).difference(set(stocks_not_found)))
-print("total count of stocks: ",len(stocks))
+# stocks_directories, stocks_not_found = create_stock_directory(stocks)
+# stocks = list(set(stocks).difference(set(stocks_not_found)))
+# print("total count of stocks: ",len(stocks))
 
 def pre_processing(data):
     print("null values : ")
@@ -91,16 +91,16 @@ def stock_analysis(stock, paths):
     return data
     
     
-temp = ["AMD"]
-data = {}
-for stock in temp:
-    data[stock] = stock_analysis(stock, stocks_directories)
+# temp = ["AMD"]
+# data = {}
+# for stock in temp:
+#     data[stock] = stock_analysis(stock, stocks_directories)
 
-dataset = data["AMD"]
-dataset = dataset.sort_values(by = "date", ascending = True)   
+# dataset = data["AMD"]
+# dataset = dataset.sort_values(by = "date", ascending = True)   
 
 
-dataset["year_month"] = dataset["date"].dt.to_period("M")  # Convert to 'YYYY-MM' format
+# dataset["year_month"] = dataset["date"].dt.to_period("M")  # Convert to 'YYYY-MM' format
 
 
     
