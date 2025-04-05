@@ -9,7 +9,7 @@ from pathlib import Path
 from difflib import get_close_matches
 
 
-stocks = ["AAPL","MFST","NVDA","AMZN","META","GOOGL","TSLA","JPM","V","BRK,B","AVGO","LLY","XOM","UNH","MA","COST","PG","NFLX","JNJ","WMT","ABBV","HD","KO","MRK","ORCL","GE","DIS","PLTR","GS","QCOM","TXN","SPGI","CAT","AMD","UBER","MS","BLK","TMUS","SBUX","BX","LMT","CVS","CL","MSI","GD","PNC","COF"]
+stocks = ["AAPL","MFST","NVDA","AMZN","META","GOOGL","TSLA","JPM","LLY","XOM","UNH","MA","COST","NFLX","KO","MRK","ORCL","GE","DIS","PLTR","GS","UBER","MS"]
 
 def ensure_files(stock, directory, file):
     print("stock: ",stock)
